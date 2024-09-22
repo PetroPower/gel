@@ -26,7 +26,7 @@ func NewShareable[T Resource](create CreateFunc[T], destroy DestroyFunc[T]) *Sha
 	}
 }
 
-// Aqcuire will allocate the shareable resource or return it if it is already allocated
+// Acquire will allocate the shareable resource or return it if it is already allocated
 func (s *Shareable[T]) Acquire(ctx context.Context) (*Handle[T], error) {
 	s.lock.Lock()
 	defer s.lock.Unlock()

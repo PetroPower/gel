@@ -38,7 +38,7 @@ func NewPool[T Resource](create CreateFunc[T], destroy DestroyFunc[T], capacity 
 //   - If capacity becomes available and there is already a resource allocated, it will be returned.
 //   - If capacity becomes available and the resource needs to be allocated, then the proveded CreateFunc
 //     will be called. On success, the created resource will be returned. On failure, the error from
-//     the CreateFunc will be returned, and the aquired capacity will be released.
+//     the CreateFunc will be returned, and the acquired capacity will be released.
 func (p *Pool[T]) Acquire(ctx context.Context) (*Handle[T], error) {
 	err := p.sem.Acquire(ctx, 1)
 	if err != nil {
