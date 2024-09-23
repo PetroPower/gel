@@ -1,4 +1,4 @@
-module github.com/abferm/gel
+module github.com/PetroPower/gel
 
 go 1.22.7
 

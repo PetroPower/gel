@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/abferm/gel/smap"
+	"github.com/PetroPower/gel/smap"
 	"golang.org/x/sync/semaphore"
 )
 

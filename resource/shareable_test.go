@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/abferm/gel/resource"
+	"github.com/PetroPower/gel/resource"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/abferm/gel/resource"
+	"github.com/PetroPower/gel/resource"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 )
